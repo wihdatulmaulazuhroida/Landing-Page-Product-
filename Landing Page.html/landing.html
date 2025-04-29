@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>handmade product</title>
+  </head>
+  <body>
+    <style>
+        body {
+            font-family: 'Times New Roman', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #A0937D; 
+        }
+
+        
+        header {
+            background-image: ;
+            background-size: cover;
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            font size: 48px;
+            margin: 0;
+        }
+        header p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        <style>
+    /* Mengatur ukuran dan tata letak gambar */
+    .card img {
+        height: 300px;
+        object-fit: cover;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Efek hover untuk gambar - memperbesar sedikit */
+    .card:hover img {
+        transform: scale(1.1);  /* Membuat gambar membesar 10% */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);  /* Memberikan bayangan di sekitar gambar */
+    }
+
+    /* Efek hover untuk keseluruhan kartu (gambar + teks) */
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: scale(1.05);  /* Membesarkan keseluruhan kartu sedikit saat di-hover */
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);  /* Memberikan efek bayangan lebih besar saat hover */
+    }
+
+    /* Mengatur margin antara kartu produk */
+    .product-card {
+        margin-bottom: 30px;
+    }
+        .cta-button {
+            padding: 12px 25px;
+            background-color: #E7D4B5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .cta-button:hover {
+            background-color: ;
+        }
+        nav {
+            text-align: center;
+            margin: 20ox 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #A0937D;
+            font-weight: bold;
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: white;
+            margin: 20px 0;
+        }
+        section h2 {
+            font-size: 36px;
+            color: #A0937D;
+            margin-bottom: 20px;
+        }
+        section p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 250px;
+            background-color: #fff;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product h3 {
+            font-size: 22px;
+            color: #E7D4B5;
+        }
+        .product p {
+            font-size: 16px;
+            color: #E7D4B5;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+    
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">LALA'S HANDMADE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Our Product
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#cardigan">Cardigan</a></li>
+            <li><a class="dropdown-item" href="#cutedoll">Cute Doll</a></li>
+            <li><a class="dropdown-item" href="#hat">Hat</a></li>
+            <li><a class="dropdown-item" href="#keychain">Keychain</a></li>
+            <li><a class="dropdown-item" href="#slingbag">Sling Bag</a></li>
+            <li><a class="dropdown-item" href="#products">All Product</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact Person</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sugges">Suggestion Box</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Discount 10%</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+
+      </form>
+</nav>
+     <section>
+       <h2>Are you looking for handmade Products? Check out my shop then!</h2>
+       <div class="container">
+        <br>
+        <a href="#products" type="button" class="btn btn-outline-dark">Click Me!</a>
+        </br>
+       </div>
+       <body>
+     </section>
+        <section id="home">
+         
+              <div class="carousel-item">
+                <img src="1.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+     </section>
+     <section id="products">
+      <h2>All Products</h2>
+      <div class="container">
+        <div class="row">
+          <!-- Product 1 -->
+          <div class="col-md-4" id="navbarNav">
+            <div class="card">
+              <img src="cardigan.jpeg" class="card-img-top img-fluid" alt="Product 1">
+              <div class="card-body">
+                <h5 class="card-title">Cardigan</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Product 2 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="cutedoll.jpeg" class="card-img-top img-fluid" alt="Product 2">
+              <div class="card-body">
+                <h5 class="card-title">Cute Doll</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Product 3 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="hat.jpeg" class="card-img-top img-fluid" alt="Product 3">
+              <div class="card-body">
+                <h5 class="card-title">Hat</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Product 4 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="keychain.jpeg" class="card-img-top img-fluid" alt="Product 4">
+              <div class="card-body">
+                <h5 class="card-title">Keychain</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Product 5 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="slingbag.jpeg" class="card-img-top img-fluid" alt="Product 5">
+              <div class="card-body">
+                <h5 class="card-title">Sling Bag</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="cardigan">
+      <h2>Cardigan</h2>
+      <div class="container">
+          <div class="row">
+              <!-- Cardigan 1 -->
+              <div class="col-md-4">
+                  <div class="card">
+                      <img src="cardigan.jpeg" class="card-img-top img-fluid" alt="Cardigan 1">
+                      <div class="card-body">
+                          <h5 class="card-title">Cardigan 1</h5>
+                          <p class="card-text">Rp. 50.000</p>
+                      </div>
+                  </div>
+              </div>
+              <!-- Cardigan 2 -->
+              <div class="col-md-4">
+                  <div class="card">
+                      <img src="cardigan1.jpeg" class="card-img-top img-fluid" alt="Cardigan 2">
+                      <div class="card-body">
+                          <h5 class="card-title">Cardigan 2</h5>
+                          <p class="card-text">Rp. 44.000</p>
+                      </div>
+                  </div>
+              </div>
+              <!-- Cardigan 3 -->
+              <div class="col-md-4">
+                  <div class="card">
+                      <img src="cardigan2.jpeg" class="card-img-top img-fluid" alt="Cardigan 3">
+                      <div class="card-body">
+                          <h5 class="card-title">Cardigan 3</h5>
+                          <p class="card-text">Rp. 52.000</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section id="cutedoll">
+    <h2>Cute Doll</h2>
+    <div class="container">
+        <div class="row">
+            <!-- Cardigan 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="cutedoll.jpeg" class="card-img-top img-fluid" alt="Cardigan 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Cute Doll 1</h5>
+                        <p class="card-text">Rp. 32.000</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Cardigan 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="cutedoll1.jpeg" class="card-img-top img-fluid" alt="Cardigan 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Cute Doll 2</h5>
+                        <p class="card-text">Rp. 34.000</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Cardigan 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="cutedoll2.jpeg" class="card-img-top img-fluid" alt="Cardigan 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Cute Doll 3</h5>
+                        <p class="card-text">Rp. 38.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="hat">
+  <h2>Hat</h2>
+  <div class="container">
+      <div class="row">
+          <!-- Cardigan 1 -->
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="hat.jpeg" class="card-img-top img-fluid" alt="Cardigan 1">
+                  <div class="card-body">
+                      <h5 class="card-title">Hat 1</h5>
+                      <p class="card-text">Rp. 40.000</p>
+                  </div>
+              </div>
+          </div>
+          <!-- Cardigan 2 -->
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="hat1.jpeg" class="card-img-top img-fluid" alt="Cardigan 2">
+                  <div class="card-body">
+                      <h5 class="card-title">Hat 2</h5>
+                      <p class="card-text">Rp. 42.000</p>
+                  </div>
+              </div>
+          </div>
+          <!-- Cardigan 3 -->
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="hat2.jpeg" class="card-img-top img-fluid" alt="Cardigan 3">
+                  <div class="card-body">
+                      <h5 class="card-title">Hat 3</h5>
+                      <p class="card-text">Rp. 45.000</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section id="keychain">
+  <h2>Keychain</h2>
+  <div class="container">
+      <div class="row">
+          <!-- Cardigan 1 -->
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="keychain.jpeg" class="card-img-top img-fluid" alt="Cardigan 1">
+                  <div class="card-body">
+                      <h5 class="card-title">Keychain 1</h5>
+                      <p class="card-text">Rp. 12.000</p>
+                  </div>
+              </div>
+          </div>
+          <!-- Cardigan 2 -->
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="keychain1.jpeg" class="card-img-top img-fluid" alt="Cardigan 2">
+                  <div class="card-body">
+                      <h5 class="card-title">Keychain 2</h5>
+                      <p class="card-text">Rp. 9.000</p>
+                  </div>
+              </div>
+          </div>
+          <!-- Cardigan 3 -->
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="keychain2.jpeg" class="card-img-top img-fluid" alt="Cardigan 3">
+                  <div class="card-body">
+                      <h5 class="card-title">Keychain 3</h5>
+                      <p class="card-text">Rp. 6.000</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section id="slingbag">
+  <h2>Sling Bag</h2>
+  <div class="container">
+      <div class="row">
+          <!-- Cardigan 1 -->
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="slingbag.jpeg" class="card-img-top img-fluid" alt="Cardigan 1">
+                  <div class="card-body">
+                      <h5 class="card-title">Sling Bag 1</h5>
+                      <p class="card-text">Rp. 42.000</p>
+                  </div>
+              </div>
+          </div>
+          <!-- Cardigan 2 -->
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="slingbag1.jpeg" class="card-img-top img-fluid" alt="Cardigan 2">
+                  <div class="card-body">
+                      <h5 class="card-title">Sling Bag 2</h5>
+                      <p class="card-text">Rp. 44.000</p>
+                  </div>
+              </div>
+          </div>
+          <!-- Cardigan 3 -->
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="slingbag2.jpeg" class="card-img-top img-fluid" alt="Cardigan 3">
+                  <div class="card-body">
+                      <h5 class="card-title">Sling Bag 3</h5>
+                      <p class="card-text">Rp. 48.000</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section id="contact">
+  <h2>Contact Person</h2>
+  <p>Email : lalaprohandmade@gmail.com</p>
+  <p>Call : +62 812 8966 8734</p>
+</section>
+    <section id="sugges">
+    <form>
+        <div class="mb-3">
+           <h2>Suggestion Box</h2>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+      </section>
+    <footer>
+        <p>&copy; 2024 Handmade. All rights reserved.</p>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+   
+  </body>
+</html>
